@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="description" content="Portfólio profissional de Psicanalista Clínica e Professora. Especialista em psicanálise clínica e formação de analistas. Acolhimento com autoridade." />
+  <meta name="keywords" content="psicanalista, psicanálise, consultório, terapia, análise clínica" />
+  <meta name="author" content="Dra. Psicanalista" />
+  <meta property="og:title" content="Portfólio - Psicanalista Clínica & Professora" />
+  <meta property="og:description" content="Especialista em psicanálise clínica. Acolhimento com autoridade." />
+  <meta property="og:type" content="website" />
+  
+  <title>Portfólio - Psicanalista Clínica & Professora IFD</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-bege-light: #F5F1E8;
+      --color-bege-arena: #E8DFD3;
+      --color-marrom-medio: #6B5B4A;
+      --color-marrom-cafe: #8B6F47;
+      --color-taupe: #A89F94;
+      --color-caramelo: #D4A574;
+      --color-text-dark: #3D3D3D;
+      --color-white: #FFFFFF;
+      --transition-smooth: all 0.3s ease;
+      --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
+      --border-radius: 8px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: var(--color-bege-light);
+      color: var(--color-text-dark);
+      line-height: 1.6;
+      letter-spacing: 0.3px;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(245, 241, 232, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-subtle);
+      z-index: 1000;
+      transition: var(--transition-smooth);
+    }
+
+    header.scrolled {
+      box-shadow: var(--shadow-medium);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-marrom-cafe);
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: var(--transition-smooth);
+    }
+
+    .logo:hover {
+      color: var(--color-caramelo);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--color-text-dark);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-marrom-cafe);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .social-header {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .social-header a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--color-bege-arena);
+      color: var(--color-marrom-cafe);
+      transition: var(--transition-smooth);
+      font-size: 1rem;
+    }
+
+    .social-header a:hover {
+      background-color: var(--color-marrom-cafe);
+      color: var(--color-white);
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      margin-top: 80px;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, var(--color-bege-light) 0%, var(--color-bege-arena) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--color-marrom-cafe);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-content .tagline {
+      font-size: 1.3rem;
+      color: var(--color-taupe);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      color: var(--color-text-dark);
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: var(--border-radius);
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--color-marrom-cafe);
+      color: var(--color-white);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-caramelo);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-bege-arena);
+      color: var(--color-marrom-cafe);
+      border: 2px solid var(--color-marrom-cafe);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--color-marrom-cafe);
+      color: var(--color-white);
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-image:hover img {
+      transform: scale(1.02);
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      text-decoration: none;
+      box-shadow: var(--shadow-medium);
+      transition: var(--transition-smooth);
+      z-index: 999;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1) translateY(-4px);
+      background-color: #20BA5A;
+    }
+
+    /* SOBRE SECTION */
+    .sobre {
+      padding: 5rem 2rem;
+      background-color: var(--color-white);
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-marrom-cafe);
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--color-caramelo);
+      border-radius: 2px;
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .sobre-image {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .sobre-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .sobre-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      color: var(--color-marrom-medio);
+      margin-bottom: 1rem;
+    }
+
+    .sobre-content p {
+      font-size: 1rem;
+      color: var(--color-text-dark);
+      margin-bottom: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .credentials {
+      background-color: var(--color-bege-arena);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin-top: 1.5rem;
+    }
+
+    .credentials h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--color-marrom-cafe);
+      margin-bottom: 0.8rem;
+    }
+
+    .credentials ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .credentials li {
+      padding: 0.5rem 0;
+      color: var(--color-text-dark);
+      font-size: 0.95rem;
+    }
+
+    .credentials li::before {
+      content: '✓ ';
+      color: var(--color-caramelo);
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    /* ATUAÇÃO SECTION */
+    .atuacao {
+      padding: 5rem 2rem;
+      background-color: var(--color-bege-light);
+    }
+
+    .atuacao-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .atuacao-card {
+      background-color: var(--color-white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition-smooth);
+      border-left: 4px solid var(--color-marrom-cafe);
+    }
+
+    .atuacao-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .atuacao-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--color-marrom-cafe);
+      margin-bottom: 0.8rem;
+    }
+
+    .atuacao-card p {
+      font-size: 0.95rem;
+      color: var(--color-text-dark);
+      line-height: 1.7;
+    }
+
+    /* PROVA SOCIAL SECTION */
+    .prova-social {
+      padding: 5rem 2rem;
+      background-color: var(--color-white);
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background-color: var(--color-bege-light);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition-smooth);
+    }
+
+    .testimonial-card:hover {
+      box-shadow: var(--shadow-medium);
+    }
+
+    .stars {
+      color: var(--color-caramelo);
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: var(--color-text-dark);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--color-marrom-cafe);
+      font-size: 0.9rem;
+    }
+
+    /* FORMULÁRIO SECTION */
+    .contato {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, var(--color-bege-arena) 0%, var(--color-bege-light) 100%);
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: var(--color-white);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: var(--color-marrom-cafe);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid var(--color-bege-arena);
+      border-radius: var(--border-radius);
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      color: var(--color-text-dark);
+      transition: var(--transition-smooth);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-marrom-cafe);
+      box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-group.required label::after {
+      content: ' *';
+      color: var(--color-marrom-cafe);
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background-color: var(--color-marrom-cafe);
+      color: var(--color-white);
+      border: none;
+      border-radius: var(--border-radius);
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .form-submit:hover {
+      background-color: var(--color-caramelo);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .form-feedback {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      display: none;
+      font-weight: 600;
+    }
+
+    .form-feedback.success {
+      background-color: #D4EDDA;
+      color: #155724;
+      display: block;
+    }
+
+    .form-feedback.error {
+      background-color: #F8D7DA;
+      color: #721C24;
+      display: block;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: var(--color-marrom-medio);
+      color: var(--color-white);
+      padding: 3rem 2rem 1.5rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-section p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-links a {
+      color: var(--color-white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition-smooth);
+      opacity: 0.9;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: var(--color-white);
+      transition: var(--transition-smooth);
+      font-size: 1.1rem;
+    }
+
+    .footer-social a:hover {
+      background-color: var(--color-caramelo);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      nav ul {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .sobre-grid,
+      .atuacao-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .whatsapp-float {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+        margin-top: 70px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-content .tagline {
+        font-size: 1.1rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+
+      .form-container {
+        padding: 1.5rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-container">
+      <a href="#" class="logo">PSICANALISTA</a>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atuacao">Atuação</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li class="social-header">
+            <a href="https://instagram.com/psicanalista" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Acolhimento com Autoridade</h1>
+        <p class="tagline">Especialista em Psicanálise Clínica e Formação de Analistas</p>
+        <p>Bem-vindo ao meu espaço de atuação profissional. Sou Psicanalista Clínica e Professora do Instituto Fazendo a Diferença (IFD), dedicada a oferecer atendimento humanizado e de excelência, aliando rigor teórico com acolhimento genuíno.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20agendar%20uma%20sessão" target="_blank" class="btn btn-primary">Agendar Sessão</a>
+          <a href="#contato" class="btn btn-secondary">Enviar Mensagem</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032127117/JMiGe8tfADAdEvkP9dxLSn/hero-portrait-fhfPTEpHyEmERUcUrVKMDW.webp" alt="Psicanalista profissional em consultório" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE SECTION -->
+  <section class="sobre" id="sobre">
+    <div class="section-container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="sobre-grid">
+        <div class="sobre-image">
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032127117/JMiGe8tfADAdEvkP9dxLSn/hero-consultorio-MKB4hD79UUqVMburv5hpd2.webp" alt="Consultório acolhedor e profissional" />
+        </div>
+        <div class="sobre-content">
+          <h3>Trajetória Profissional</h3>
+          <p>Com mais de 15 anos de experiência em psicanálise clínica, dedico-me a acompanhar pacientes em suas jornadas de autoconhecimento e transformação. Minha prática fundamenta-se em rigor teórico, ética profissional e genuíno acolhimento.</p>
+          <p>Como professora do Instituto Fazendo a Diferença, contribuo para a formação de novos analistas, transmitindo não apenas conhecimento técnico, mas também a responsabilidade ética que permeia nossa profissão.</p>
+          <div class="credentials">
+            <h4>Credenciais & Formação</h4>
+            <ul>
+              <li>Formação em Psicanálise Clínica</li>
+              <li>Membro de Associação de Psicanálise Reconhecida</li>
+              <li>Professora do Instituto Fazendo a Diferença</li>
+              <li>Supervisora de Casos Clínicos</li>
+              <li>Especialização em Psicanálise Contemporânea</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATUAÇÃO SECTION -->
+  <section class="atuacao" id="atuacao">
+    <div class="section-container">
+      <h2 class="section-title">Áreas de Atuação</h2>
+      <div class="atuacao-grid">
+        <div class="atuacao-card">
+          <h3>Psicanálise Clínica</h3>
+          <p>Atendimento analítico individual focado em explorar o inconsciente, compreender conflitos psíquicos e promover transformação pessoal profunda através do método psicanalítico.</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Análise de Adultos</h3>
+          <p>Trabalho especializado com adultos em diferentes fases da vida, abordando questões existenciais, relacionamentos, carreira e desenvolvimento pessoal.</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Formação de Analistas</h3>
+          <p>Docência no Instituto Fazendo a Diferença, transmitindo fundamentos teóricos, técnica analítica e ética profissional para futuros psicanalistas.</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Supervisão Clínica</h3>
+          <p>Supervisão de casos clínicos para analistas em formação e profissionais, oferecendo orientação teórica e técnica para aprimoramento da prática.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL SECTION -->
+  <section class="prova-social">
+    <div class="section-container">
+      <h2 class="section-title">Depoimentos de Pacientes</h2>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Um espaço verdadeiramente acolhedor onde me senti compreendida. A competência profissional aliada à humanidade faz toda a diferença."</p>
+          <p class="testimonial-author">— Maria S.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Minha análise foi transformadora. Recomendo fortemente a profissionalismo e dedicação da Dra. em cada sessão."</p>
+          <p class="testimonial-author">— João P.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Encontrei em seu consultório um espaço seguro para explorar minhas questões. Gratidão pela jornada compartilhada."</p>
+          <p class="testimonial-author">— Ana L.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO SECTION -->
+  <section class="contato" id="contato">
+    <div class="section-container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <div class="form-container">
+        <form id="contactForm">
+          <div class="form-group required">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group required">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone (opcional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group required">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Enviar via WhatsApp</button>
+          <div id="formFeedback" class="form-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Dra. Psicanalista</h4>
+          <p>Psicanalista Clínica e Professora do Instituto Fazendo a Diferença. Dedicada ao acolhimento com autoridade e excelência profissional.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#atuacao">Atuação</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Conecte-se</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></li>
+            <li><a href="https://instagram.com/psicanalista" target="_blank">Instagram</a></li>
+            <li><a href="mailto:contato@psicanalista.com">Email</a></li>
+          </ul>
+          <div class="footer-social">
+            <a href="https://instagram.com/psicanalista" target="_blank" rel="noopener noreferrer" title="Instagram">📷</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp">💬</a>
+            <a href="mailto:contato@psicanalista.com" title="Email">✉️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Dra. Psicanalista. Todos os direitos reservados. | Desenvolvido com dedicação profissional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Contate via WhatsApp">💬</a>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form handling
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Validation
+      if (!name || !email || !message) {
+        formFeedback.className = 'form-feedback error';
+        formFeedback.textContent = 'Por favor, preencha todos os campos obrigatórios.';
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        formFeedback.className = 'form-feedback error';
+        formFeedback.textContent = 'Por favor, insira um email válido.';
+        return;
+      }
+
+      // Build WhatsApp message
+      let whatsappMessage = `Olá, meu nome é ${name}.\nEmail: ${email}`;
+      if (phone) {
+        whatsappMessage += `\nTelefone: ${phone}`;
+      }
+      whatsappMessage += `\n\nGostaria de agendar uma sessão.\n\nMensagem: ${message}`;
+
+      // Show feedback
+      formFeedback.className = 'form-feedback success';
+      formFeedback.textContent = 'Redirecionando para o WhatsApp…';
+
+      // Redirect to WhatsApp
+      const whatsappURL = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+      setTimeout(() => {
+        window.open(whatsappURL, '_blank');
+        // Reset form
+        contactForm.reset();
+        formFeedback.textContent = 'Mensagem enviada com sucesso!';
+        setTimeout(() => {
+          formFeedback.className = 'form-feedback';
+        }, 3000);
+      }, 500);
+    });
+  </script>
+</body>
+
+</html>
