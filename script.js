@@ -51,7 +51,7 @@
       formFeedback.textContent = 'Redirecionando para o WhatsApp…';
 
       // Redirect to WhatsApp
-      const whatsappURL = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+      const whatsappURL = `https://wa.me/5589994256021?text=${encodeURIComponent(whatsappMessage)}`;
       setTimeout(() => {
         window.open(whatsappURL, '_blank');
         // Reset form
