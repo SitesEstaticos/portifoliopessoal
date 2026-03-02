@@ -41,10 +41,10 @@
 
       // Build WhatsApp message
       let whatsappMessage = `Olá, meu nome é ${name}.\nEmail: ${email}`;
-      if (phone) {
-        whatsappMessage += `\nTelefone: ${phone}`;
-      }
-      whatsappMessage += `\n\nGostaria de agendar uma sessão.\n\nMensagem: ${message}`;
+      // if (phone) {
+      //   // whatsappMessage += `\nTelefone: ${phone}`;
+      // }
+      whatsappMessage += `.\nMensagem: ${message}`;
 
       // Show feedback
       formFeedback.className = 'form-feedback success';
