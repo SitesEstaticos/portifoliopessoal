@@ -1,6 +1,6 @@
-# Portfólio Profissional - Psicanalista Clínica & Professora IFD
+# Berenice Martins - Psicanalista Clínica & Professora IFD
 
-Portfólio estático profissional e sofisticado para Psicanalista Clínica e Professora do Instituto Fazendo a Diferença (IFD).
+Portfólio de Berenice Martins Psicanalista Clínica e Professora do Instituto Fazendo a Diferença (IFD). 
 
 ## 🎯 Objetivo
 
